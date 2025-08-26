@@ -1,0 +1,14 @@
+<div class="filter-container">
+
+  <label for="filter">Filter: </label>
+
+  <select name="filter" id="filter"
+    (change)="filterChanged($event)"
+  >
+
+    @for(filterInfo of filtersInfomation; track $index){
+      <option [value]="filterInfo.value"> {{ filterInfo.filter }} ({{ filterInfo.count }})</option>
+    }
+
+  </select>
+</div>

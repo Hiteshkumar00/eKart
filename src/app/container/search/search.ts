@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-search',
@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './search.css'
 })
 export class Search {
-  searchText: string = 'Mens wear';
+  searchText: string = '';
+
+  @Output() onSearchEvent = new EventEmitter<string>();
+
+  onSearch(){
+    this.onSearchEvent.emit(this.searchText.trim().toLowerCase());
+  }
 }

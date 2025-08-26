@@ -1,7 +1,9 @@
 <div class="ekart--product--container">
 
-  <app-search></app-search>
+  <app-search
+    (onSearchEvent)="setSearchText($event)"
+  />
 
-  <product-list />
+  <product-list [searchText]="searchText" />
 
 </div>

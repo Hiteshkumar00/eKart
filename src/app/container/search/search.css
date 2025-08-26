@@ -25,6 +25,16 @@
   margin-left: -5px;
   color: #fff;
   border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-search-disabled{
+  padding: 12px 30px;
+  background-color: #28282B;
+  margin-left: -5px;
+  color: #999;
+  border-radius: 2px;
+  cursor: not-allowed;
 }
 
 .ekart-search-result-for{

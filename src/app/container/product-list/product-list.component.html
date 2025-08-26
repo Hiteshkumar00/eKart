@@ -1,0 +1,26 @@
+
+<app-filter
+  [filtersInfomation]="productsFilterInfomation"
+  (onFilterProducts)="onFilterProductsChanged($event)"
+/>
+
+<div class="ekart--products--container">
+
+  @for(prod of filteredProducts; track $index;){
+    @if(
+      (
+        prod.name +
+        prod.brand +
+        prod.gender +
+        prod.slug +
+        prod.price +
+        prod.size
+      )
+      .toLowerCase()
+      .includes(searchText)
+      ){
+      <app-product [product]="prod" />
+    }
+  }
+
+</div>
