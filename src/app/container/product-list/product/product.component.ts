@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 
+import { Product } from '../../../Models/Product';
+
 @Component({
   selector: 'app-product',
   standalone: false,
@@ -7,20 +9,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './product.component.css'
 })
 export class ProductComponent {
-  @Input('product') product: {
-    id: number;
-    name: string;
-    brand: string;
-    gender: "unisex" | "male" | "female" | "kids" | string;
-    category: string;
-    size: string;
-    colors: string[];
-    price: number;
-    discountPrice: number | null;
-    is_in_inventory: boolean;
-    items_left: number;
-    imageURL: string;
-    slug: string;
-    description: string;
-  };
+  @Input('product') product: Product;
 }

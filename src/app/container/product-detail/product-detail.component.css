@@ -1,0 +1,200 @@
+/* Overlay style */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Container styling */
+.ekart--product--details--info.scroll {
+  width: 500px;
+  max-height: 80vh;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  overflow-y: auto;
+  color: #333;
+  position: relative;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+/* Close button */
+.ekart-product-detail-close {
+  text-align: end;
+  position:sticky;
+  top: 0px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  color: #999;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+.ekart-product-detail-close:hover {
+  color: #e74c3c;
+}
+
+/* Product image */
+.ekart-product-detail-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.ekart-product-detail-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Product name */
+.ekart-product-detail-name h2 {
+  font-size: 1.6rem;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Category badges */
+.ekart-product-detail-gbc {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.ekart-product-detail-gbc span {
+  background-color: #f0f0f0;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666;
+  user-select: none;
+}
+
+/* Price section */
+.ekart-product-detail-price p {
+  font-size: 1rem;
+  margin: 0 0 25px 0;
+  line-height: 1.4;
+}
+.ekart-product-detail-price b {
+  font-weight: 700;
+  margin-right: 8px;
+}
+.ekart-product-detail-price s {
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  display: inline-block;
+}
+.ekart-product-detail-price span {
+  font-weight: 700;
+  font-size: 1.1rem;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+.ekart-product-detail-price span:first-child {
+  background-color: #e74c3c;
+  color: white;
+}
+.ekart-product-detail-price span:last-child {
+  background-color: #27ae60;
+  color: white;
+}
+
+/* Section headings */
+.ekart-product-detail-size > div:first-child,
+.ekart-product-detail-color > div:first-child,
+.ekart-product-detail-desc > div:first-child {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+.ekart-product-detail-size h4,
+.ekart-product-detail-color h4,
+.ekart-product-detail-desc h4 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #222;
+  margin: 0;
+}
+
+/* Sizes */
+.ekart-product-detail-size div:nth-child(2) {
+  display: flex;
+  gap: 12px;
+}
+.ekart-product-detail-available-size {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #f7f7f7;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #555;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+.ekart-product-detail-available-size:hover {
+  border-color: #27ae60;
+  background-color: #eafaf1;
+  color: #27ae60;
+}
+
+/* Colors */
+.ekart-product-detail-color div:nth-child(2) {
+  display: flex;
+  gap: 15px;
+}
+.ekart-product-detail-available-color {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.ekart-product-detail-available-color:hover {
+  border-color: #27ae60;
+  box-shadow: 0 0 8px rgba(39, 174, 96, 0.7);
+}
+
+/* Product description */
+.ekart-product-detail-desc div:nth-child(2) {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* Add to Cart button */
+.ekart-product-detail-addtoCart {
+  text-align: center;
+}
+.btn-add-to-cart {
+  background-color: #27ae60;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(39, 174, 96, 0.4);
+}
+.btn-add-to-cart:hover {
+  background-color: #219150;
+}
+

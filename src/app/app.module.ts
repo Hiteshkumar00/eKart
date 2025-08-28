@@ -14,6 +14,7 @@ import { Search } from './container/search/search';
 import { ProductListComponent } from './container/product-list/product-list.component';
 import { ProductComponent } from './container/product-list/product/product.component';
 import { FilterComponent } from './container/product-list/filter/filter.component';
+import { ProductDetailComponent } from './container/product-detail/product-detail.component';
 
 @NgModule({
   declarations:[ // here we specify all these thigs who comes from this module like components pipes  => who all have standalone falee
@@ -26,7 +27,8 @@ import { FilterComponent } from './container/product-list/filter/filter.componen
     Search,
     ProductListComponent,
     ProductComponent,
-    FilterComponent
+    FilterComponent,
+    ProductDetailComponent
   ],
   imports: [  // all the external module  => who all have standalone true => in this app by default it's true
     BrowserModule,

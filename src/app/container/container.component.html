@@ -4,6 +4,10 @@
     (onSearchEvent)="setSearchText($event)"
   />
 
-  <product-list [searchText]="searchText" />
+  <product-list [searchText]="searchText" #productListComponent />
+
+  @if(productListComponent.selectedProduct){
+    <product-detail [productListComp]="productListComponent" />
+  }
 
 </div>

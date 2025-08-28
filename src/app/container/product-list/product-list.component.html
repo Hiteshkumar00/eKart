@@ -14,12 +14,13 @@
         prod.gender +
         prod.slug +
         prod.price +
-        prod.size
+        prod.size.concat('') +
+        prod.colors.concat('')
       )
       .toLowerCase()
       .includes(searchText)
       ){
-      <app-product [product]="prod" />
+      <app-product [product]="prod" (click)="selectedProduct = prod" />
     }
   }
 
