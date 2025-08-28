@@ -17,5 +17,4 @@ export class ContainerComponent {
     this.searchText = value;
   }
 
-
 }

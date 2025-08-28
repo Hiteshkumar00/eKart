@@ -1,4 +1,4 @@
-import { Input, NgModule } from "@angular/core";
+import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
@@ -15,6 +15,7 @@ import { ProductListComponent } from './container/product-list/product-list.comp
 import { ProductComponent } from './container/product-list/product/product.component';
 import { FilterComponent } from './container/product-list/filter/filter.component';
 import { ProductDetailComponent } from './container/product-detail/product-detail.component';
+import { FeaturedBrandsComponent } from './container/featured-brands/featured-brands.component';
 
 @NgModule({
   declarations:[ // here we specify all these thigs who comes from this module like components pipes  => who all have standalone falee
@@ -28,7 +29,8 @@ import { ProductDetailComponent } from './container/product-detail/product-detai
     ProductListComponent,
     ProductComponent,
     FilterComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    FeaturedBrandsComponent
   ],
   imports: [  // all the external module  => who all have standalone true => in this app by default it's true
     BrowserModule,
