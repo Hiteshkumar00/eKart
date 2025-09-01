@@ -70,12 +70,12 @@
   margin-bottom: 15px;
 }
 .ekart-product-detail-gbc span {
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
   padding: 5px 12px;
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 600;
-  color: #666;
+  /* color: #666; */
   user-select: none;
 }
 
@@ -195,7 +195,8 @@
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 10px rgba(39, 174, 96, 0.4);
 }
-.btn-add-to-cart:hover {
+.btn-add-to-cart:hover
+{
   background-color: #219150;
 }
 

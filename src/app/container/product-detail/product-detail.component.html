@@ -16,9 +16,9 @@
         <h2>{{ product.name }}</h2>
       </div>
       <div class="ekart-product-detail-gbc">
-        <span>{{ product.gender }}</span>
-        <span>{{ product.brand }}</span>
-        <span>{{ product.category }}</span>
+        <span [setBackground]="{backColor: 'red', textColor: 'white'}" >{{ product.gender }}</span> <!-- backColor and textColor is setBackground direcvive's input property  -->
+        <span [setBackground]="{backColor: 'black', textColor: 'white'}" >{{ product.brand }}</span>
+        <span [setBackground]="{backColor: 'pink', textColor: 'green'}" >{{ product.category }}</span>
       </div>
       <div class="ekart-product-detail-price">
         <p>
@@ -76,7 +76,7 @@
         </ng-template>
 
         <ng-template #notifyMeBtn>
-          <button class="btn-add-to-cart">NOTIFY ME</button>
+          <button class="btn-add-to-cart" appHover >NOTIFY ME</button>
         </ng-template>
 
         <ng-container

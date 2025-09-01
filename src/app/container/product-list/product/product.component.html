@@ -1,4 +1,4 @@
-<div class="ekart--product--item">
+<div class="ekart--product--item" [disableProduct]="!product.is_in_inventory">
 
   <div class="ekart--add--to--wishlist">
     <i class="fa-regular fa-heart"></i>
@@ -13,11 +13,8 @@
   </div>
 
   <div class="ekart--add-to--price">$ {{ product.price }}</div>
-
   <div class="ekart--product--name">{{ product.name }}</div>
-
   <div class="ekart--product--category">{{ product.gender }} . {{ product.category }} . {{ product.brand }}</div>
-
   <div class="ekart--product--available-colors">{{ product.colors.length }} Colors . Best Seller</div>
 
   <div class="ekart--product--in--stock"

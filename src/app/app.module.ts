@@ -17,6 +17,11 @@ import { FilterComponent } from './container/product-list/filter/filter.componen
 import { ProductDetailComponent } from './container/product-detail/product-detail.component';
 import { FeaturedBrandsComponent } from './container/featured-brands/featured-brands.component';
 
+import { SetBackground } from "./CustomDirectives/SetBackground.directive";
+import { HighlightDirective } from "./CustomDirectives/Highlight.directive";
+import { AppHoverDirective } from "./CustomDirectives/appHover.directive";
+import { DisableProductDirective } from "./CustomDirectives/disable-product.directive";
+
 @NgModule({
   declarations:[ // here we specify all these thigs who comes from this module like components pipes  => who all have standalone falee
     App,
@@ -32,10 +37,15 @@ import { FeaturedBrandsComponent } from './container/featured-brands/featured-br
     ProductDetailComponent,
     FeaturedBrandsComponent
   ],
-  imports: [  // all the external module  => who all have standalone true => in this app by default it's true
+  imports: [
     BrowserModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+
+    SetBackground, // Our custom directive to set the backgroundColor
+    HighlightDirective,
+    AppHoverDirective,
+    DisableProductDirective
   ],
   providers: [
 
